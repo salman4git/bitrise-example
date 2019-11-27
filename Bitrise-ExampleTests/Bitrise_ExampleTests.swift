@@ -10,6 +10,8 @@ import XCTest
 @testable import Bitrise_Example
 
 class Bitrise_ExampleTests: XCTestCase {
+    
+    let A = 10, B = 5
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -17,6 +19,14 @@ class Bitrise_ExampleTests: XCTestCase {
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+    }
+    
+    func testAdd() {
+        XCTAssertEqual(A+B, 15)
+    }
+    
+    func testSubtract() {
+        XCTAssertEqual(A-B, 5)
     }
 
     func testExample() {
